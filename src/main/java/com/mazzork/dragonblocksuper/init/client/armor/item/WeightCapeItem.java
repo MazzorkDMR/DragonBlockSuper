@@ -18,7 +18,7 @@ import java.util.function.Consumer;
 
 public class WeightCapeItem extends ArmorItem {
 
-    private static final String chestplateLocation = new ResourceLocation(DragonBlockSuper.MODID, "textures/models/armor/weight_cape.png").toString();
+    private static final String textureLocation = new ResourceLocation(DragonBlockSuper.MODID, "textures/models/armor/weight_cape.png").toString();
 
     public WeightCapeItem(Type pType, Properties pProperties) {
         super(ModArmorMaterials.WEIGHT_CAPE, pType, pProperties);
@@ -26,7 +26,7 @@ public class WeightCapeItem extends ArmorItem {
 
     @Override
     public @Nullable String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-        return chestplateLocation;
+        return textureLocation;
     }
 
     @Override
